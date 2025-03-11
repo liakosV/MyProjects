@@ -34,17 +34,11 @@ public class bagels {
             }
 
 
-//            if (num1 == num2 || num1 == num3 && num1 < 9) {
-//                num1++;
-//            } if (num2 == num3 || num2 == num1 && num2 < 9) {
-//                num2++;
-//            } if (num3 == num1 || num3 == num2 && num3 < 9 ) {
-//                num3++;
-//            }
+
 
             System.out.println("I have thought a number.");
             String result = String.valueOf(num1) + String.valueOf(num2) + String.valueOf(num3);
-            System.out.println("Try to guess it." + result);
+            System.out.println("Try to guess it.");
 
 
             while (true) {
@@ -53,14 +47,9 @@ public class bagels {
                     break;
                 }
 
-                System.out.println("Give a 3 digit number: ");
+                System.out.println("Give a 3-digit number: ");
                 guess = scanner.next();
 
-//                if (guess >= 1000 || guess < 100) {
-//                    System.err.println("Please put only a 3 digit numbers");
-//                    System.out.println("Quiting...");
-//                    return;
-//                }
 
                 int firstDigit = Integer.parseInt(guess.substring(0, 1));
                 int secondDigit = Integer.parseInt(guess.substring(1, 2));
@@ -68,6 +57,7 @@ public class bagels {
                 int a1 = 0;
                 int a2 = 0;
                 int a3 = 0;
+
                 if (firstDigit == num1) {
                     System.out.print("Fermi ");
                     a1 = 1;
