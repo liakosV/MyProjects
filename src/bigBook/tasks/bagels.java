@@ -13,16 +13,18 @@ public class bagels {
             int num2 = 0;
             int num3 = 0;
             String guess = "";
+            int tries = 0;
             Random random = new Random();
             Scanner scanner = new Scanner(System.in);
 
             System.out.println();
             System.out.println("Welcome to the game of bagels! \nI am thinking of a 3-digit number. Try to guess what it is");
             System.out.println("Here are some clues:");
-            System.out.println("When i say:    That means:\n" +
-                                "Pico           One digit is correct but in the wrong position\n" +
-                                "Fermi          One digit is correct and in the right position\n" +
-                                "Bagels         No digit is correct.");
+            System.out.println("""
+                    When i say:    That means:
+                    Pico           One digit is correct but in the wrong position
+                    Fermi          One digit is correct and in the right position
+                    Bagels         No digit is correct.""");
 
 
 
@@ -37,11 +39,18 @@ public class bagels {
 
 
             System.out.println("I have thought a number.");
-            String result = String.valueOf(num1) + String.valueOf(num2) + String.valueOf(num3);
-            System.out.println("Try to guess it.");
+            String result = num1 + String.valueOf(num2) + num3;
+            System.out.println("Try to guess it in 10 tries.");
 
 
             while (true) {
+                tries++;
+                System.out.println("You have " + tries + "/10 tries left.");
+                if (tries == 10) {
+                    System.out.println("you lost!");
+                    break;
+                }
+
                 if (result.equals(guess) ) {
                     System.out.println("Congratulations! \nYou have found the secret number!");
                     break;
