@@ -33,27 +33,30 @@ public class StarsApp {
                 for (int i = 0; i < stars; i++) {
                     System.out.print("*");
                 }
+                break;
             case 2:
                 for (int i = 0; i < stars; i++) {
                     System.out.println("*");
                 }
+                break;
             case 3:
                 int h = 0;
                 while (h != stars) {
                     h++;
                     for (int j = 0; j < stars; j++) {
                         System.out.print("*");
-
                     }
                     System.out.println();
                 }
+                break;
             case 4:
                 for (int i = 0; i < stars; i++) {
-                    for (int j = 0; j < i; j++) {
+                    for (int j = 0; j <= i; j++) {
                         System.out.print("*");
                     }
                     System.out.println();
                 }
+                break;
             case 5:
                 for (int i = stars; i > 0; i--) {
                     for (int j = 0; j < i; j++) {
@@ -61,6 +64,10 @@ public class StarsApp {
                     }
                     System.out.println();
                 }
+                break;
+            default:
+                System.out.println("Error in choice");
+                break;
         }
 
     }
