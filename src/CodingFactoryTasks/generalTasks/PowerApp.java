@@ -1,6 +1,4 @@
-package CodingFactoryTasks;
-
-import java.util.Scanner;
+package CodingFactoryTasks.generalTasks;
 
 public class PowerApp {
 

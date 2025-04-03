@@ -1,4 +1,4 @@
-package CodingFactoryTasks;
+package CodingFactoryTasks.generalTasks;
 
 public class EvenOddApp {
 

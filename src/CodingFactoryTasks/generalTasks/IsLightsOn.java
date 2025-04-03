@@ -1,6 +1,4 @@
-package CodingFactoryTasks;
-
-import org.w3c.dom.ls.LSOutput;
+package CodingFactoryTasks.generalTasks;
 
 import java.util.Scanner;
 

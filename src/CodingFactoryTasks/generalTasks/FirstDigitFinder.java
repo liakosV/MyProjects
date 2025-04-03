@@ -1,4 +1,4 @@
-package CodingFactoryTasks;
+package CodingFactoryTasks.generalTasks;
 
 import java.util.Scanner;
 
